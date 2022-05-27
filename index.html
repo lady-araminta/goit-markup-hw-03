@@ -11,20 +11,20 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="container">
-        <nav>
-            <a href="/" class="logo link"><span class="web-logo">Web</span>Studio</a>
-            <ul class="site-nav list">
-                <li><a href="./index.html" class="site-nav-items link active">Студия</a></li>
-                <li><a href="./portfolio.html" class="site-nav-items link">Портфолио</a></li>
-                <li><a href="" class="site-nav-items link">Контакты</a></li>
+            <nav class="nav">
+                <a href="/" class="logo link"><span class="web-logo">Web</span>Studio</a>
+                <ul class="site-nav">
+                    <li class="site-pages"><a href="./index.html" class="site-nav-items link active">Студия</a></li>
+                    <li class="site-pages"><a href="./portfolio.html" class="site-nav-items link">Портфолио</a></li>
+                    <li class="site-pages"><a href="" class="site-nav-items link">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="contacts-nav">
+                <li class="connect"><a href="mailto:info@devstudio.com" class="contacts-nav-items link">info@devstudio.com</a></li>
+                <li class="connect"><a href="tel:+380961111111" class="contacts-nav-items link">+38 096 111 11 11</a></li>
             </ul>
-        </nav>
-        <ul class="contacts-nav list">
-            <li><a href="mailto:info@devstudio.com" class="contacts-nav-items link">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111" class="contacts-nav-items link">+38 096 111 11 11</a></li>
-        </ul>
         </div>
     </header>
     <main>
@@ -39,21 +39,21 @@
         <section class="features-section">
             <div class="container">
             <!--неотображаемый заголовок-->
-            <h2>Особенности</h2>
-            <ul class="features-list list">
-                <li>
+            <h2 class="visually-hidden">Особенности</h2>
+            <ul class="features-list">
+                <li class="features-list-items">
                     <h3 class="title">Внимание к деталям</h3>
                     <p class="features-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                 </li>
-                <li>
+                <li class="features-list-items">
                     <h3 class="title">Пунктуальность</h3>
                     <p class="features-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                 </li>
-                <li>
+                <li class="features-list-items">
                     <h3 class="title">Планирование</h3>
                     <p class="features-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                 </li>
-                <li>
+                <li class="features-list-items">
                     <h3 class="title">Современные технологии</h3>
                     <p class="features-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
@@ -64,10 +64,10 @@
         <section class="projects-section">
             <div class="container">
             <h2 class="section-title">Чем мы занимаемся</h2>
-            <ul class="list">
-                <li><img src="./images/web-sites.jpg" alt="Веб-сайты" width="370"></li>
-                <li><img src="./images/mobile-app.jpg" alt="Приложения" width="370"></li>
-                <li><img src="./images/design.jpg" alt="Дизайн" width="370"></li>
+            <ul class="our-projects">
+                <li class="our-projects-item"><img src="./images/web-sites.jpg" alt="Веб-сайты" width="370"></li>
+                <li class="our-projects-item"><img src="./images/mobile-app.jpg" alt="Приложения" width="370"></li>
+                <li class="our-projects-item"><img src="./images/design.jpg" alt="Дизайн" width="370"></li>
             </ul>
             </div>
         </section>
@@ -75,23 +75,23 @@
         <section class="team-section">
             <div class="container">
             <h2 class="section-title">Наша команда</h2>
-            <ul class="team-list list">
-                <li>
+            <ul class="team-list">
+                <li class="team">
                     <img src="./images/igor.jpg" alt="Игорь Демьяненко" width="270">
                     <h3 class="team-list-title">Игорь Демьяненко</h3>
                     <p class="team-position">Product Designer</p>
                 </li>
-                <li>
+                <li class="team">
                     <img src="./images/olga.jpg" alt="Ольга Репина" width="270">
                     <h3 class="team-list-title">Ольга Репина</h3>
                     <p class="team-position">Frontend Developer</p>
                 </li>
-                <li>
+                <li class="team">
                     <img src="./images/nikolay.jpg" alt="Николай Тарасов" width="270">
                     <h3 class="team-list-title">Николай Тарасов</h3>
                     <p class="team-position">Marketing</p>
                 </li>
-                <li>
+                <li class="team">
                     <img src="./images/mikhail.jpg" alt="Михаил Ермаков" width="270">
                     <h3 class="team-list-title">Михаил Ермаков</h3>
                     <p class="team-position">UI Designer</p>
@@ -104,7 +104,7 @@
         <div class="container">
         <a href="/" class="footer-logo link"><span class="web-logo">Web</span>Studio</a>
         <address>
-        <ul class="list footer-list">
+        <ul class="footer-list">
             <li><p class="footer-text">г. Киев, пр-т Леси Украинки, 26</p></li>
             <li><a href="mailto:info@example.com" class="footer-list-items link">info@example.com</a></li>
             <li><a href="tel:+380991111111" class="footer-list-items link">+38 099 111 11 11</a></li>
